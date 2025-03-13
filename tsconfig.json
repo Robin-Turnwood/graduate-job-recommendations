@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        // Project options
+        "lib": ["ESNext"],
+        "outDir": "./dist",
+        "target": "ES6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+
+        // Strict Checks
+        "strict": true,
+        "alwaysStrict": true,
+        "allowUnreachableCode": false,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        // Linter Checks
+        "noImplicitReturns": true,
+        "noUncheckedIndexedAccess": true,
+        "noUnusedLocals": true,
+
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true
+    },
+    "include": ["./**/*.ts"],
+    "exclude": ["node_modules/**/*"]
+}
