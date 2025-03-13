@@ -1,11 +1,5 @@
-import { Member, Job } from './data';
+import { Member, Job, Recommend } from './data';
 
-export interface Recommend {
-    job: Job;
-    score: number;
-}
-
-// const locations = ['london', 'edinburgh', 'york', 'manchester'];
 const keywords = [
     'developer',
     'designer',
@@ -43,7 +37,7 @@ export function recommendJobs(member: Member, jobs: Job[]): Recommend[] {
         }
 
         if (bio.includes('internship') && job.title.toLowerCase().includes('internship')) {
-            score += 1; // For internship roles
+            score += 1;
         }
 
         if (score > 0) {
